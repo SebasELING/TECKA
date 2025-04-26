@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TECKA Consultoría en Transferencia Tecnológica</title>
+    <meta name="description" content="Contáctenos en Bucaramanga para consultorías en transferencia tecnológica, valoración de patentes e inteligencia competitiva.">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo">
+                <img src="icon/icono TECKA.ico" alt="">
+                <span>Consultoría en Transferencia Tecnológica</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="empresas.html">Aliados</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="animate-on-scroll">Contáctenos</h1>
+            <p class="animate-on-scroll" style="transition-delay: 0.2s">Estamos en Bucaramanga para ayudarle a maximizar el valor de su tecnología</p>
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll slide-right">
+                    <h2><i class="fas fa-map-marker-alt"></i> Oficina Principal</h2>
+                    <p>Bucaramanga, Santander</p>
+                    <p>Calle 45 #26-45, Oficina 501</p>
+                    <p>Edificio Empresarial Los Almendros</p>
+
+                    <h2><i class="fas fa-phone"></i> Teléfonos</h2>
+                    <p><a href="tel:+5776356789">+57 (7) 635 6789</a></p>
+                    <p><a href="tel:+573102345678">+57 310 234 5678</a></p>
+
+                    <h2><i class="fas fa-envelope"></i> Correo Electrónico</h2>
+                    <p><a href="mailto:info@tecka.com">info@tecka.com</a></p>
+                    <p><a href="mailto:comercial@tecka.com">comercial@tecka.com</a></p>
+
+                    <h2><i class="fas fa-clock"></i> Horario de Atención</h2>
+                    <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+                    <p>Sábados: 9:00 am - 1:00 pm</p>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/tecka" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/tecka_innov" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/tecka_innovacion" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573102345678" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container animate-on-scroll slide-up">
+                    <h2>Envíenos un mensaje</h2>
+                    <p>Complete el formulario y nos pondremos en contacto con usted en menos de 24 horas</p>
+                    
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nombre completo*</label>
+                            <div class="error-message">Por favor ingrese su nombre completo</div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Correo electrónico*</label>
+                            <div class="error-message">Por favor ingrese un email válido</div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="tel" id="phone" name="phone" placeholder=" " pattern="[0-9]{7,15}">
+                            <label for="phone">Teléfono</label>
+                            <div class="error-message">Formato de teléfono inválido</div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="text" id="company" name="company" placeholder=" ">
+                            <label for="company">Empresa/Organización</label>
+                        </div>
+                        
+                        <div class="form-group floating-label select-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected></option>
+                                <option value="diagnostico">Diagnóstico Tecnológico</option>
+                                <option value="transferencia">Transferencia Tecnológica</option>
+                                <option value="inteligencia">Inteligencia Competitiva</option>
+                                <option value="valoracion">Valoración de Patentes</option>
+                                <option value="otro">Otro servicio</option>
+                            </select>
+                            <label for="service">Servicio de interés*</label>
+                            <div class="error-message">Por favor seleccione un servicio</div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Mensaje*</label>
+                            <div class="error-message">Por favor ingrese su mensaje</div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Acepto la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a>*</label>
+                            <div class="error-message">Debe aceptar la política de privacidad</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span class="submit-text">Enviar mensaje</span>
+                            <span class="loading-icon"><i class="fas fa-spinner fa-spin"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="animate-on-scroll">Nuestra ubicación en Bucaramanga</h2>
+            <div class="map-container animate-on-scroll">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.527128263742!2d-73.119749924686!3d7.119028315497268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f8b9b6a4b3b%3A0x1a7a6e6e5f6e5f6e!2sEdificio%20Empresarial%20Los%20Almendros%2C%20Bucaramanga%2C%20Santander!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h3>TECKA</h3>
+                        <span>Consultoría en Transferencia Tecnológica</span>
+                    </div>
+                    <p>Conectamos innovación con el mercado paso a paso, generando soluciones tecnológicas con impacto comercial.</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#diagnostico">Diagnóstico Tecnológico</a></li>
+                        <li><a href="servicios.html#transferencia">Transferencia Tecnológica</a></li>
+                        <li><a href="servicios.html#inteligencia">Inteligencia Competitiva</a></li>
+                        <li><a href="servicios.html#valoracion">Valoración de Patentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> info@tecka.com</p>
+                    <p><i class="fas fa-phone"></i> +57 (7) 635 6789</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bucaramanga, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TECKA. Todos los derechos reservados. Especialistas en propiedad intelectual y transferencia tecnológica.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/company/tecka" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/tecka_innov" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/tecka_innovacion" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
